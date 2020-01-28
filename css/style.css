@@ -1,0 +1,48 @@
+body {
+    background-color: blue;
+}
+
+.navbar {
+    background-color: black;
+}
+
+#btndwn {
+    color: rgb(166, 255, 0);
+}
+
+.dpdwn {
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: rgb(166, 255, 0);
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.dpdwn:hover {
+    color: black;
+    background: blue;
+}
+
+.navtitle {
+    color: rgb(166, 255, 0);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+
+#bio {
+    background-color: black;
+    margin-right: 50%;
+    margin-top: 3%;
+}
+
+.card-title {
+    color: rgb(166, 255, 0);
+}
+
+.card-text {
+    color: rgb(166, 255, 0);
+}
