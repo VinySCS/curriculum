@@ -36,27 +36,81 @@ body {
 #bio {
     background-color: black;
     margin-right: 50%;
+    left: 5px;
     margin-top: 3%;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+#spec {
+    background-color: black;
+    margin-left: 50%;
+    right: 5px;
+    margin-top: 3%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.biophoto {
+    width: 130px;
+    float: left;
+    margin: 10px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.shdw {
+    background-color: black;
+    width: 130px;
+    box-shadow: 242px 53px 180px 21px rgb(166, 255, 0);
 }
 
 .card-title {
     color: rgb(166, 255, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .card-text {
     color: rgb(166, 255, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#link{
-
-    color:rgb(166, 255, 0);
+#link {
+    color: rgb(166, 255, 0);
     font-style: oblique;
-    
 }
 
-#link:hover{
-
-    color:rgb(166, 255, 0);
+#link:hover {
+    color: rgb(166, 255, 0);
     background-color: blue;
     font-style: initial;
+}
+
+ul.specgraph {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul.specgraph li {
+    margin-bottom: .5em;
+    padding: .2em;
+    background: rgb(166, 255, 0);
+    color: rgb(0, 0, 0);
+}
+
+.eng {
+    background-size: 10px;
+}
+
+.frontend {
+    background-color: rgb(166, 255, 0) repeat-y 40% 0;
+}
+
+.log {
+    background-color: rgb(166, 255, 0) repeat-y 60% 0;
+}
+
+.sql {
+    background-color: rgb(166, 255, 0) repeat-y 80% 0;
 }
