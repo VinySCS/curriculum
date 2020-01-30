@@ -1,68 +1,133 @@
 <!doctype html>
 <html lang="pt-br">
-
-
+            
+                                        <!--~~NameTag da Página/Configurações de charset e compatibilidade de telas/linkagem para bibliotecas e arquivos ~~-->
 <head>
     <title>Viny Site</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
+    
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- Optional JavaScript -->
+   <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
-<!--Start-->
 
-<body style="background-image: url('img/bg.jpg'); background-repeat: no-repeat;">
+                                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Links NavBar~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<body style="background-image: url('img/bg.jpg'); background-repeat: no-repeat; background-color: black;">
 
     <nav class="navbar ">
         <span class="navtitle">Vinicius Souza C. da Silva</span>
-        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation" id="btndwn">▼</button>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <a target="_blank" rel="noopener noreferrer" class="dpdwn" href="https://www.instagram.com/viniciusposthuman/">Instagram</a>
-                <a target="_blank" rel="noopener noreferrer" class="dpdwn" href="https://github.com/VinySCS">GitHub</a>
+        <div class="navico">
+            <h5 class="card-title">Links para contato:</h5>
+            <a rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/viniciusposthuman"><i class="fab fa-instagram" ></i></a>
+            <a rel="noopener noreferrer" target="_blank" href="https://github.com/VinySCS"><i class="fab fa-github"></i></a>
+            <a rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/profile.php?id=100044136373982"><i class="fab fa-facebook"></i></a>
+            <a rel="noopener noreferrer" target="_blank" href="https://api.whatsapp.com/send?phone=5511951442948&text=Olá,%20vim%20através%20do%20seu%20portfólio!"><i class="fab fa-whatsapp-square"></i></a>
         </div>
-        </ul>
+                                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Links Dropdown~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+            <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation" id="btndwn">▼</button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0" id="navbarlinks">
+                    <a target="_blank" rel="noopener noreferrer" class="dpdwn" href="https://www.instagram.com/viniciusposthuman/"> <i class="fab fa-instagram"> Instagram</i></a>
+                    <a target="_blank" rel="noopener noreferrer" class="dpdwn" href="https://github.com/VinySCS"> <i class="fab fa-github"> GitHub</i></a>
+                    <a target="_blank" rel="noopener noreferrer" class="dpdwn" href="https://www.facebook.com/profile.php?id=100044136373982"> <i class="fab fa-facebook"> Facebook</i></a>
+                    <a target="_blank" rel="noopener noreferrer" class="dpdwn" href="https://api.whatsapp.com/send?phone=5511951442948&text=Olá,%20vim%20através%20do%20seu%20portfólio!"> <i class="fab fa-whatsapp-square"> Whatsapp</i></a> 
+                    <p class="email">Email para contato: vinyscsti@gmail.com</p>
+            </ul>
+        </div>
+        
     </nav>
-
-    <div class="card" id="bio" style="">
+    
+                                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Início caixa bio~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <div class="card" id="bio">
         <div class="card-body">
             <h5 class="card-title">Quem sou eu&#63;</h5>
             <div class="shdw">
                 <img src="img/eu.jpg" alt="Eu" class="biophoto">
             </div>
-            <p class="card-text">→Me chamo Vinicius, nasci no dia 23 do m&ecirc;s de Dezembro no ano 1998. Meu primeiro contato com um computador foi quando eu ainda era criança e tinha meus 6 a 7 anos de idade, onde eu j&aacute; era um jogador de <a href="https://pt.wikipedia.org/wiki/Counter-Strike"
-                    id="link">Counter Strike</a>, jogos FPS at&eacute; hoje s&atilde;o meu v&iacute;cio, e assim atrav&eacute;s de jogos acabei conhecendo estruturas de pastas onde continham arquivos de configura&ccedil;&otilde;es onde s&oacute; se configurava
-                e/ou modificava atrav&eacute;s de c&oacute;digos de linguagens de programa&ccedil;&atilde;o, e assim surgiu meu interesse nessa área de T.I.
+            <p class="card-text">→Me chamo Vinicius, nasci no dia 23 do m&ecirc;s de Dezembro no ano 1998. 
+                Meu primeiro contato com um computador foi quando eu ainda era criança e tinha meus 6 a 7 anos de idade, 
+                onde eu j&aacute; era um jogador de <a href="https://pt.wikipedia.org/wiki/Counter-Strike"id="link">Counter Strike</a>, 
+                jogos FPS at&eacute; hoje s&atilde;o meu v&iacute;cio, e assim atrav&eacute;s de jogos acabei conhecendo estruturas de 
+                pastas onde continham arquivos de configura&ccedil;&otilde;es onde s&oacute; se configurava e/ou modificava atrav&eacute;s 
+                de c&oacute;digos de linguagens de programa&ccedil;&atilde;o, e assim surgiu meu interesse nessa área de T.I.
             </p>
         </div>
     </div>
-    <div class="card" id="spec" style="">
+                                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Fim caixa bio~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+                                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Início caixa conhecimentos~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <div class="card" id="spec">
         <div class="card-body">
-            <h5 class="card-title">Minhas qualifica&ccedil;&otilde;es</h5>
+            <h5 class="card-title">Meus conhecimentos</h5>
             <div class="shdw">
             </div>
-            <!--<ul class="specgraph">
-                <li class="eng">Ingl&ecirc;s</li>
-                <li class="frontend">Front-End</li>
-                <li class="log">Log&iacute;stica</li>
-                <li class="sql">SQL</li>
-                <li class="backend">Back-End</li>
-                <li class="linux">Linux</li>
-            </ul>-->
+
+                                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Início do ProgressBar com Bootstrap Modificado~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
+            </div>
+            <p class="cdesc">Inglês - Intermediário</p>
+            
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100" style="width: 55%"></div>
+            </div>
+            <p class="cdesc">Front-End - HTML - CSS - BOOTSTRAP - Intermediário</p>
+           
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100" style="width: 45%"></div>
+            </div>
+            <p class="cdesc">Hardware - MANUTENÇÃO - Intermediário</p>
+            
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100" style="width: 45%"></div>
+            </div>
+            <p class="cdesc">Linux - Comandos Terminal - Básico</p>
+            
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100" style="width: 35%"></div>
+            </div>
+            <p class="cdesc">SQL - Básico</p>
+            
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100" style="width: 28%"></div>
+            </div>
+            <p class="cdesc">Back-end - PHP/C++/PYTHON - Básico</p>
         </div>
+                                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Fim ProgressBar~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
     </div>
+                                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Fim caixa conhecimento~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+                                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Início caixa de baixo~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <div class="card" id="contato">
+                            <div class="card-body">
+                                <span class="email" id="ebaixo"> Email para contato: <br/> vinyscsti@gmail.com </span>
+                                <img src="img/samurai.jfif" alt="Samurai" class="frasefoto">
+                                        <p class="frase">A perfeição é uma montanha impossível de 
+                                        <br/>escalar que deve ser escalada 
+                                            um pouco a cada dia.
+                                            <br/>Código Samurai</p>
+                            </div>
+                        </div>
+                                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Fim caixa de baixo~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 </body>
-
-
-
-<!--https://jsfiddle.net/kimmobrunfeldt/swc64gg3/ Grapichs-->
 
 </html>

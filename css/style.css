@@ -1,15 +1,24 @@
-body {
-    background-color: blue;
-}
-
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~NavBar~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .navbar {
     background-color: black;
 }
-
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Nome NavBar(Responsivo)~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.navtitle {
+    color: rgb(166, 255, 0);
+    font-family: monospace;
+    font-size: 30px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Ícones NavBar(Responsivo)~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.navico{
+    position: absolute;
+    right: 10px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Botão dropdown (Responsivo)~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 #btndwn {
     color: rgb(166, 255, 0);
+    visibility: hidden;
 }
-
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Conteúdo dropdown (Responsivo)~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .dpdwn {
     width: 100%;
     padding: .25rem 1.5rem;
@@ -21,36 +30,30 @@ body {
     background-color: transparent;
     border: 0;
 }
-
 .dpdwn:hover {
     color: black;
     background: blue;
 }
-
-.navtitle {
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Titulo e Descrição das Caixas~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.card-title {
     color: rgb(166, 255, 0);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 30px;
+    font-family: monospace;
 }
 
+.card-text {
+    color: rgb(166, 255, 0);
+    font-family: monospace;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Caixa quem sou eu(Responsivo)~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 #bio {
     background-color: black;
     margin-right: 50%;
     left: 5px;
-    margin-top: 3%;
+    margin-top: 1%;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
 }
-
-#spec {
-    background-color: black;
-    margin-left: 50%;
-    right: 5px;
-    margin-top: 3%;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-}
-
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Foto~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .biophoto {
     width: 130px;
     float: left;
@@ -58,23 +61,62 @@ body {
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
 }
-
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Caixa de conhecimentos(Responsivo)~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#spec {
+    background-color: black;
+    margin-left: 30%;
+    right: 5px;
+    margin-top: 1%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Ultima caixa de baixo CONTATO (Responsivo)~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#contato {
+    background-color: black;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-top: 1%;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    visibility: visible;
+}
+.email{
+    color: rgb(166,255,0);
+    font-size: 22px;
+    font-family: monospace;
+}
+#ebaixo{
+    margin-right: 10px;
+    margin-top: -80px;
+}
+.frase{
+    color: rgb(166,255,0);
+    font-size: 18px;
+    font-family: monospace;
+    right: 8px;   
+    top: 8px;
+    position: absolute;
+}
+.frasefoto{
+    width: 310px;
+    position: absolute;
+    top: 8px;
+    right: 500px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Textos abaixo da barra de progresso~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.cdesc{
+    font-family: monospace;
+    color: rgb(166, 255, 0);
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Sobreamento~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .shdw {
     background-color: black;
     width: 130px;
     box-shadow: 242px 53px 180px 21px rgb(166, 255, 0);
 }
-
-.card-title {
-    color: rgb(166, 255, 0);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.card-text {
-    color: rgb(166, 255, 0);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Links navbar(Responsivo)~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 #link {
     color: rgb(166, 255, 0);
     font-style: oblique;
@@ -85,32 +127,48 @@ body {
     background-color: blue;
     font-style: initial;
 }
-
-ul.specgraph {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ícones FontAwesome~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.fab {
+    color: rgb(166, 255, 0);
+}
+.fab:hover {
+    color: rgba(166, 255, 0, 0.548);
 }
 
-ul.specgraph li {
-    margin-bottom: .5em;
-    padding: .2em;
-    background: rgb(166, 255, 0);
-    color: rgb(0, 0, 0);
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Responsivo~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@media only screen and (max-width: 1121px) {
+.frasefoto  {width: 250px;}
 }
 
-.eng {
-    background-size: 10px;
+@media only screen and (max-width: 1045px) {
+.frasefoto  {visibility: hidden;}
 }
 
-.frontend {
-    background-color: rgb(166, 255, 0) repeat-y 40% 0;
+@media only screen and (max-width: 830px) {
+.frase{font-size: 14px;}
+#ebaixo{font-size: 14px;}
 }
 
-.log {
-    background-color: rgb(166, 255, 0) repeat-y 60% 0;
+@media only screen and (max-width: 651px) {
+    .navtitle{font-size: 25px;}
+    .email{font-size:15px;}
 }
 
-.sql {
-    background-color: rgb(166, 255, 0) repeat-y 80% 0;
+@media only screen and (min-width: 601px) {
+#navbarlinks{display: none;}
+}
+
+@media only screen and (max-width: 600px) {
+    .navtitle{font-size: 20px;}
+    #btndwn {visibility: visible;}
+    #contato{visibility: hidden;}
+    #bio{width: 97%;}
+    #spec{width: 97%;
+    margin-left: 0%;
+    left: 5px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;}
+    .navico{visibility: hidden;}
 }
