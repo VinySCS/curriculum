@@ -134,7 +134,12 @@
 .fab:hover {
     color: rgba(166, 255, 0, 0.548);
 }
-
+.fas {
+    color: rgb(166, 255, 0);
+}
+.fas:hover {
+    color: rgba(166, 255, 0, 0.548);
+}
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Responsivo~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 @media only screen and (max-width: 1121px) {
 .frasefoto  {width: 250px;}
